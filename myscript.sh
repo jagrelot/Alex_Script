@@ -16,13 +16,10 @@ then
 
   for x in "${RELEASECLASSES[@]}" 
   do
-  echo ---"$x"---
     for y in "${MASTERCLASSES[@]}"
     do
-    echo ---"$y"---
       if [ "$x-$xml" == "$y" ]
         then
-          echo "$x-$xml and $y MATCH!"
           cp "$y" $RELEASEFOLDER
       fi
     done
