@@ -1,10 +1,5 @@
 #! /bin/bash
 
-# for x in "${release[@]}" 
-# do
-# cp -r $x .
-# echo "$x copied"
-# done
 RELEASEFOLDER=~/Documents/stars/classes
 if [ -d "$RELEASEFOLDER" ]
 then
